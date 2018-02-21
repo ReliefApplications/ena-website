@@ -258,7 +258,7 @@
 
     <div class="nav-wrapper">
 
-      <ul class="nav nav-stacked nav-custom" style="padding-top:20px;" data-resourcespath="4. data management" >
+      <ul class="nav nav-stacked nav-custom" style="padding-top:20px;" data-resourcespath="1. additional" >
         <li><a href="#resources" class="page-scroll">{{site.data[locale].datamanagement.about}}</a></li>
           <!-- . . . resources nav menu goes here . . . -->
       </ul>
@@ -321,7 +321,7 @@
       </div>
 
       <div id="resources-contents">
-        <div data-resourcespath="4. data management" class="resources-block">
+        <div data-resourcespath="1. additional" class="resources-block">
             <div class="contents"></div>
             <!-- . . . folders and file links go here . . . -->
         </div>
@@ -414,7 +414,8 @@ var resourcesdata;
 function fetchResources(){
   $.ajax({
     type: 'GET',
-    url: 'http://webviz.redcross.org/ctp/datamanagement/' + language,
+    url: 'http://34.216.207.161/ena/additional',
+    // url: 'http://webviz.redcross.org/ctp/datamanagement/' + language,
     dataType: 'JSON',
     error: function(){
       $("#error-resources").show();
@@ -422,6 +423,7 @@ function fetchResources(){
     },
     success: function(response){
       resourcesdata = (response === undefined) ? [] : response;
+      console.log('RESSOURCES DATA', resourcesdata);
       if(resourcesdata.length > 0){
         buildResources();
       } else {
@@ -439,17 +441,19 @@ function buildResources() {
   //var pathPartsArray = [];
    folderPaths = [];
    pathPartsArray = [];
+
   $.each(resourcesdata, function(index, d){
     // this is necessary to get those folders if there is a folder without a file inside (just other folders)
-    for(i=2;i<=d.dboxpathparts.length;i++){
+    for(i=1;i<=d.dboxpathparts.length;i++){
       if($.inArray(d.dboxpathparts.slice(0,i).join('/'), folderPaths) === -1) {
         folderPaths.push(d.dboxpathparts.slice(0,i).join('/'))
         pathPartsArray.push(d.dboxpathparts.slice(0,i))
       }
     }
+    console.log('folderPaths', folderPaths)
+    console.log('pathPartsArray', pathPartsArray)
   });
 
-//
    rollup = d3.nest()
     .key(function(d){ return d.length; })
     .sortKeys(d3.ascending)
@@ -458,9 +462,11 @@ function buildResources() {
 
   for(var i=0; i<rollup.length; i++){
     $.each(rollup[i].values, function(index,d){
+      console.log('rollup', rollup);
       // find parent nav list item and add a sub element to it
       var navHtml = '<li><a href="#' + identity(d.slice(1).join('/')) + '" class="page-scroll">' + d.slice(-1) + '</a>' +
           '<ul class="nav nav-stacked" data-resourcespath="' + d.join('/') + '"></ul></li>';
+      console.log('navHTML', navHtml);
       $('#resources-sidebar [data-resourcespath="' + d.slice(0,-1).join('/') + '"]').append(navHtml);
       // find parent folder list element and add a sub folder div element to it
       var contentsHtml = '<div id="' + identity(d.slice(1).join('/')) + '" class="resources-block" data-resourcespath="' + d.join('/') + '">' +
@@ -493,10 +499,6 @@ function buildResources() {
       if(systemFile(resourcesdata[i].basename) === false){
         if(resourcesdata[i].dboxpathparts.length === 1){
           console.log("oops")
-          // var thisHtml = '<div id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
-          //   '<a target="_blank" href="http://webviz.redcross.org/ctp/docs/' + language + '/resources/' + resourcesdata[i].basename + '">' +
-          //   resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
-          // $('.overview-docs').append(thisHtml);
         } else {
           var thisHtml = '<div class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
             '<a target="_blank" href="http://webviz.redcross.org/ctp/docs/' + language + '/' +
