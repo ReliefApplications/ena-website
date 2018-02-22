@@ -444,12 +444,13 @@ function buildResources() {
 
   $.each(resourcesdata, function(index, d){
     // this is necessary to get those folders if there is a folder without a file inside (just other folders)
-    for(i=1;i<=d.dboxpathparts.length;i++){
-      if($.inArray(d.dboxpathparts.slice(0,i).join('/'), folderPaths) === -1) {
-        folderPaths.push(d.dboxpathparts.slice(0,i).join('/'))
-        pathPartsArray.push(d.dboxpathparts.slice(0,i))
+    for(i=2;i<=d.dboxpathparts.length;i++){
+      if($.inArray(d.dboxpathparts.slice(1,i).join('/'), folderPaths) === -1) {
+        folderPaths.push(d.dboxpathparts.slice(1,i).join('/'))
+        pathPartsArray.push(d.dboxpathparts.slice(1,i))
       }
     }
+
     console.log('folderPaths', folderPaths)
     console.log('pathPartsArray', pathPartsArray)
   });
