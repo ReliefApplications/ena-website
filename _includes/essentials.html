@@ -282,7 +282,7 @@
             <div class="col-sm-4 col-xs-6">
                 <img class="img-resources img-circle" src="/img/resources1-guidance.jpg" alt="{{site.data[locale].essentials.guidelines}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidance page-scroll" role="button">{{site.data[locale].essentials.guidelines}}
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidelines page-scroll" role="button">{{site.data[locale].essentials.guidelines}}
                   <br><small>{{site.data[locale].essentials.desc-guidelines}}</small>
                   </a></p>
                 </div>
@@ -290,7 +290,7 @@
             <div class="col-sm-4 col-xs-6">
                 <img class="img-resources img-circle" src="/img/resources2-learning.jpg" alt="{{site.data[locale].essentials.apetemplates}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-learning page-scroll" role="button">{{site.data[locale].essentials.apetemplates}}
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetemplate page-scroll" role="button">{{site.data[locale].essentials.apetemplates}}
                   <br><small>{{site.data[locale].essentials.desc-apetemplates}}</small>
                   </a></p>
                 </div>
@@ -298,7 +298,7 @@
             <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
                 <img class="img-resources img-circle" src="/img/resources3-training.jpg" alt="{{site.data[locale].essentials.enateamdeploy}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-training page-scroll" role="button">{{site.data[locale].essentials.enateamdeploy}}
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-enateamdeploy page-scroll" role="button">{{site.data[locale].essentials.enateamdeploy}}
                   <br><small>{{site.data[locale].essentials.enateamdeploy}}</small>
                   </a></p>
                 </div>
@@ -309,7 +309,7 @@
             <div class="col-sm-4 col-sm-offset-2 col-xs-offset-0 col-xs-6">
                 <img class="img-resources img-circle" src="/img/resources4-coordination.jpg" alt="{{site.data[locale].essentials.apetraining}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].essentials.apetraining}}
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetraining page-scroll" role="button">{{site.data[locale].essentials.apetraining}}
                   <br><small>{{site.data[locale].essentials.desc-apetraining}}</small>
                   </a></p>
                 </div>
@@ -318,7 +318,7 @@
             <div class="col-sm-4 col-xs-6">
                 <img class="img-resources img-circle" src="/img/resources5-videos.jpg" alt="{{site.data[locale].essentials.jds}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].essentials.jds}}
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-jds page-scroll" role="button">{{site.data[locale].essentials.jds}}
                   <br><small>{{site.data[locale].essentials.desc-jds}}</small>
                   </a></p>
                 </div>
@@ -490,16 +490,19 @@ function buildResources() {
       if(d.length === 2) {
         var pageLink = '#' + identity(d.slice(1).join('/'));
         if(pageLink.indexOf('1') > -1){
-          $('.btn-resources.btn-guidance').attr('href', pageLink);
+          $('.btn-resources.btn-guidelines').attr('href', pageLink);
         }
         if(pageLink.indexOf('2') > -1){
-          $('.btn-resources.btn-learning').attr('href', pageLink);
+          $('.btn-resources.btn-apetemplate').attr('href', pageLink);
         }
         if(pageLink.indexOf('3') > -1){
-          $('.btn-resources.btn-training').attr('href', pageLink);
+          $('.btn-resources.btn-enateamdeploy').attr('href', pageLink);
         }
         if(pageLink.indexOf('4') > -1){
-          $('.btn-resources.btn-coordination').attr('href', pageLink);
+          $('.btn-resources.btn-apetraining').attr('href', pageLink);
+        }
+        if(pageLink.indexOf('5') > -1){
+          $('.btn-resources.btn-jds').attr('href', pageLink);
         }
 
       }

@@ -20,7 +20,7 @@ nav:
   - text:         "Essentials"
     url:          "/es/essentials/"
   - text:         "Additional"
-    url:          "/es/addtional/"
+    url:          "/es/additional/"
   - text:         "Comentarios"
     url:          "/es/#comentarios"
 
