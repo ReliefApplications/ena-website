@@ -440,6 +440,7 @@ function fetchResources(){
     },
     success: function(response){
       resourcesdata = (response === undefined) ? [] : response;
+      console.log('RESOURCES', resourcesdata);
       if(resourcesdata.length > 0){
         buildResources();
       } else {
@@ -463,6 +464,8 @@ function buildResources() {
         pathPartsArray.push(d.dboxpathparts.slice(0,i))
       }
     }
+    console.log('FolderPath', folderPaths);
+    console.log('pathPartsArray', pathPartsArray);
   });
 
   var rollup = d3.nest()
