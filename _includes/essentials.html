@@ -259,7 +259,7 @@
     <div class="nav-wrapper">
 
       <ul class="nav nav-stacked nav-custom" style="padding-top:20px;" data-resourcespath="3. resources" >
-        <li><a href="#resources" class="page-scroll">{{site.data[locale].resources.about}}</a></li>
+        <li><a href="#resources" class="page-scroll">{{site.data[locale].essentials.about}}</a></li>
           <!-- . . . resources nav menu goes here . . . -->
       </ul>
     </div>
@@ -278,32 +278,32 @@
       <![endif]-->
 
       <div class="text-center">
-          <h2>{{site.data[locale].resources.title}}</h2>
+          <h2>{{site.data[locale].essentials.title}}</h2>
 
-          <div id="error-resources" style="display:none;"><p>{{site.data[locale].resources.loaderror}}</p></div>
+          <div id="error-resources" style="display:none;"><p>{{site.data[locale].essentials.loaderror}}</p></div>
           <div id="grouped-resources">
           <div class="row">
             <div class="col-sm-4 col-xs-6">
-                <img class="img-resources img-circle" src="/img/resources1-guidance.jpg" alt="{{site.data[locale].resources.guidance}}">
+                <img class="img-resources img-circle" src="/img/resources1-guidance.jpg" alt="{{site.data[locale].essentials.guidelines}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidance page-scroll" role="button">{{site.data[locale].resources.guidance}}
-                  <br><small>{{site.data[locale].resources.keydocs}}</small>
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidance page-scroll" role="button">{{site.data[locale].essentials.guidelines}}
+                  <br><small>{{site.data[locale].essentials.desc-guidelines}}</small>
                   </a></p>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-6">
-                <img class="img-resources img-circle" src="/img/resources2-learning.jpg" alt="{{site.data[locale].resources.learning}}">
+                <img class="img-resources img-circle" src="/img/resources2-learning.jpg" alt="{{site.data[locale].essentials.apetemplates}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-learning page-scroll" role="button">{{site.data[locale].resources.learning}}
-                  <br><small>{{site.data[locale].resources.casestudies}}</small>
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-learning page-scroll" role="button">{{site.data[locale].essentials.apetemplates}}
+                  <br><small>{{site.data[locale].essentials.desc-apetemplates}}</small>
                   </a></p>
                 </div>
             </div>
             <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-                <img class="img-resources img-circle" src="/img/resources3-training.jpg" alt="{{site.data[locale].resources.training}}">
+                <img class="img-resources img-circle" src="/img/resources3-training.jpg" alt="{{site.data[locale].essentials.enateamdeploy}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-training page-scroll" role="button">{{site.data[locale].resources.training}}
-                  <br><small>{{site.data[locale].resources.calendar}}</small>
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-training page-scroll" role="button">{{site.data[locale].essentials.enateamdeploy}}
+                  <br><small>{{site.data[locale].essentials.enateamdeploy}}</small>
                   </a></p>
                 </div>
             </div>
@@ -311,28 +311,30 @@
 
           <div class="row">
             <div class="col-sm-4 col-sm-offset-2 col-xs-offset-0 col-xs-6">
-                <img class="img-resources img-circle" src="/img/resources4-coordination.jpg" alt="{{site.data[locale].resources.coordination}}">
+                <img class="img-resources img-circle" src="/img/resources4-coordination.jpg" alt="{{site.data[locale].essentials.apetraining}}">
                 <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].resources.coordination}}
-                  <br><small>{{site.data[locale].resources.peerworking}}</small>
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].essentials.apetraining}}
+                  <br><small>{{site.data[locale].essentials.desc-apetraining}}</small>
                   </a></p>
                 </div>
             </div>
+
             <div class="col-sm-4 col-xs-6">
-                <img class="img-resources img-circle" src="/img/resources5-videos.jpg" alt="{{site.data[locale].resources.videos}}">
+                <img class="img-resources img-circle" src="/img/resources5-videos.jpg" alt="{{site.data[locale].essentials.jds}}">
                 <div class="caption">
-                  <p><a href="https://www.youtube.com/playlist?list=PLrI6tpZ6pQmRg2nU1MEsxiKdMKPABKmlQ" target="_blank" class="btn btn-lg btn-default btn-resources btn-youtube page-scroll" role="button">{{site.data[locale].resources.videos}}&nbsp; <i class="fa fa-external-link" aria-hidden="true"></i>
-                  <br><small>{{site.data[locale].resources.youtube}}</small>
+                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].essentials.jds}}
+                  <br><small>{{site.data[locale].essentials.desc-jds}}</small>
                   </a></p>
                 </div>
             </div>
+
           </div>
 
         <p>
           <div id="search-box">
-          <input class="typeahead" type="text" placeholder="{{site.data[locale].resources.searchmessage}}">
+          <input class="typeahead" type="text" placeholder="{{site.data[locale].essentials.searchmessage}}">
           </div>
-          <div><small>({{site.data[locale].resources.suggestlimit}})</small></div>
+          <div><small>({{site.data[locale].essentials.suggestlimit}})</small></div>
         </p>
         </div>
 
@@ -426,7 +428,7 @@ function identity(ugly) {
 // GLOBAL VARIABLES
 // ################
 var language = "{{locale}}"
-var emptymessage = "{{site.data[locale].resources.emptymessage}}"
+var emptymessage = "{{site.data[locale].essentials.emptymessage}}"
 var resourcesdata, modalitiesdata;
 
 function fetchResources(){

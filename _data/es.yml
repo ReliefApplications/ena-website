@@ -17,12 +17,10 @@ nav_home:
   text:           "Inicio"
   url:            "/es/"
 nav:
-  - text:         "Caja de Herramientas"
-    url:          "/es/caja-de-herramientas/"
-  - text:         "Recursos"
-    url:          "/es/recursos/"
-  - text:         "Data Management"
-    url:          "/es/datamanagement/"
+  - text:         "Essentials"
+    url:          "/es/essentials/"
+  - text:         "Additional"
+    url:          "/es/addtional/"
   - text:         "Comentarios"
     url:          "/es/#comentarios"
 
@@ -70,64 +68,47 @@ acknowledgment:
   text1:          "La caja de herramientas para PTE en emergencias fue posible gracias al apoyo de:"
   text2:          "La traducción de la caja de herramientas para PTE en Emergencias fue financiada por la Unión Europea Ayuda Humanitaria."
 
-#############
-## TOOLKIT ##
-#############
-
-toolkit:
-  about:          "Sobre la Caja de Herramientas"
-  title:          "Explore la Caja De Herramientas"
-  paragraph1:     "La caja de herramientas para PTE en emergencias está  organizada en módulos, cada módulo corresponde a una fase distinta dentro del ciclo de proyecto."
-  paragraph2:     "Cada módulo está dividido en pasos y subpasos. Estos son indicativos y no necesariamente secuenciales. Es posible que el/la usuari@ necesite avanzar y retroceder entre pasos y subpasos para alcanzar los resultados deseados. También es posible que el/la usuari@ tenga que saltar algunos de los pasos o subpasos debido a limitaciones de tiempo y recursos ya que estas son limitaciones comunes en contextos de emergencia."
-  loaderror:      "Lo sentimos, algo salió mal al cargar el recurso. Por favor, actualice la página. Si el problema persiste, envíe un correo electrónico a <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> con la siguiente información:  Nombre del navegador de Internet que está utilizando (nombre y versión del navegador) y la dirección URL. Gracias."
-  zip:            "Explora los documentos de la caja de herramientas aquí abajo o descargue toda"
-  toolkit:        "la caja de herramientas"
-  modules:        "Encontrarás 5 módulos en la caja de herramientas:"
-  module1:        "Preparación"
-  module2:        "Evaluación <br> de Necesidades"
-  module3:        "Análisis <br> de Respuestas"
-  module4:        "Implementación"
-  module5:        "Monitoreo <br> y Evaluación"
-  modalities:     "Otras Herramientas / Modalidades:"
-  cashforwork:    "Caja de dinero por trabajo"
-  vouchers:       "Caja de cupones"
-  searchmessage:  "Busque un documento..."
-  emptymessage:   "no se encontró documento coincidente"
-  suggestlimit:   "búsqueda regresa un máximo de 20 sugerencias"
 
 ###############
-## Resources ##
+## Essentials ##
 ###############
 
-resources:
+essentials:
   about:          "Recursos"
   title:          "Recursos del Movimiento International de la Cruz Roja y de la Media Luna Roja"
   loaderror:      "Lo sentimos, algo salió mal al cargar el recurso. Por favor, actualice la página. Si el problema persiste, envíe un correo electrónico a <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> con la siguiente información:  Nombre del navegador de Internet que está utilizando (nombre y versión del navegador) y la dirección URL. Gracias."
-  guidance:       "Guías"
-  keydocs:        "Documentos Claves y Guías adicionales para PTE"
-  learning:       "Aprendizaje"
-  casestudies:    "Estudios de Caso e Informes"
-  training:       "Capacitación"
-  calendar:       "Calendario y Material"
-  coordination:   "Coordinación"
-  peerworking:    "Grupo de Trabajo PTE"
-  videos:         "Videos"
-  youtube:        "FICR Página YouTube"
+  guidelines:       "Guías"
+  desc-guidelines:        "Documentos Claves y Guías adicionales para PTE"
+  apetemplates:       "Aprendizaje"
+  desc-apetemplates:    "Estudios de Caso e Informes"
+  enateamdeploy:       "Capacitación"
+  desc-enateamdeploy:       "Calendario y Material"
+  apetraining:   "Coordinación"
+  desc-apetraining:    "Grupo de Trabajo PTE"
+  jds:         "Videos"
+  desc-jds:        "FICR Página YouTube"
   searchmessage:  "Busque un documento..."
   emptymessage:   "no se encontró documento coincidente"
   suggestlimit:   "búsqueda regresa un máximo de 20 sugerencias"
 
 #####################
-## Data Management ##
+## Additional ##
 #####################
 
-datamanagement:
+additional:
   about:          "Gestión de datos"
   title:          "Recursos para la gestión de datos"
   loaderror:      "Lo sentimos, algo salió mal al cargar el recurso. Por favor, actualice la página. Si el problema persiste, envíe un correo electrónico a <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> con la siguiente información:  Nombre del navegador de Internet que está utilizando (nombre y versión del navegador) y la dirección URL. Gracias."
-  mdc:            "Recopilación de datos móviles"
-  spreadhsheet:   "Herramientas para hojas de cálculo"
-  imresources:    "Recursos: Manejo de Información (MI) para PTE"
+  guidelines:     "Guidelines"
+  desc-guidelines:        "Description of guidelines"
+  apetemplates:       "APE Templates"
+  desc-apetemplates:    "Description of APE Templates"
+  enateamdeploy:       "ENA Team deployment"
+  desc-enateamdeploy:       "Description of ENA Team deployment"
+  apetraining:   "APE Training & Workshop content"
+  desc-apetraining:    "Description of APE ..."
+  others:         "Others"
+  desc-others:        "Description of Others"
   searchmessage:  "Busque un documento..."
   emptymessage:   "no se encontró documento coincidente"
   suggestlimit:   "búsqueda regresa un máximo de 20 sugerencias"

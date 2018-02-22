@@ -259,7 +259,7 @@
     <div class="nav-wrapper">
 
       <ul class="nav nav-stacked nav-custom" style="padding-top:20px;" data-resourcespath="1. additional" >
-        <li><a href="#resources" class="page-scroll">{{site.data[locale].datamanagement.about}}</a></li>
+        <li><a href="#resources" class="page-scroll">{{site.data[locale].additional.about}}</a></li>
           <!-- . . . resources nav menu goes here . . . -->
       </ul>
     </div>
@@ -279,42 +279,63 @@
       <![endif]-->
 
       <div class="text-center">
-          <h2>{{site.data[locale].datamanagement.title}}</h2>
+          <h2>{{site.data[locale].additional.title}}</h2>
 
-          <div id="error-resources" style="display:none;"><p>{{site.data[locale].datamanagement.loaderror}}</p></div>
+          <div id="error-resources" style="display:none;"><p>{{site.data[locale].additional.loaderror}}</p></div>
           <div id="grouped-resources">
-          <div class="row">
-            <div class="col-sm-4 col-xs-6">
-                <img class="img-resources img-circle" src="/img/datamgmt1-mdc.jpg" alt="{{site.data[locale].datamanagement.mdc}}">
-                <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-mdc page-scroll" role="button">{{site.data[locale].datamanagement.mdc}}
-                  <!-- <br><small>{{site.data[locale].datamanagement.keydocs}}</small> -->
-                  </a></p>
-                </div>
+            <div class="row">
+              <div class="col-sm-4 col-xs-6">
+                  <img class="img-resources img-circle" src="/img/resources1-guidance.jpg" alt="{{site.data[locale].additional.guidelines}}">
+                  <div class="caption">
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidance page-scroll" role="button">{{site.data[locale].additional.guidelines}}
+                    <br><small>{{site.data[locale].additional.desc-guidelines}}</small>
+                    </a></p>
+                  </div>
+              </div>
+              <div class="col-sm-4 col-xs-6">
+                  <img class="img-resources img-circle" src="/img/resources2-learning.jpg" alt="{{site.data[locale].additional.apetemplates}}">
+                  <div class="caption">
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-learning page-scroll" role="button">{{site.data[locale].additional.apetemplates}}
+                    <br><small>{{site.data[locale].additional.desc-apetemplates}}</small>
+                    </a></p>
+                  </div>
+              </div>
+              <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
+                  <img class="img-resources img-circle" src="/img/resources3-training.jpg" alt="{{site.data[locale].additional.enateamdeploy}}">
+                  <div class="caption">
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-training page-scroll" role="button">{{site.data[locale].additional.enateamdeploy}}
+                    <br><small>{{site.data[locale].additional.enateamdeploy}}</small>
+                    </a></p>
+                  </div>
+              </div>
             </div>
-            <div class="col-sm-4 col-xs-6">
-                <img class="img-resources img-circle" src="/img/datamgmt2-spreadsheet.jpg" alt="{{site.data[locale].datamanagement.spreadhsheet}}">
-                <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-spreadsheet page-scroll" role="button">{{site.data[locale].datamanagement.spreadhsheet}}
-                  <!-- <br><small>{{site.data[locale].datamanagement.casestudies}}</small> -->
-                  </a></p>
-                </div>
+
+            <div class="row">
+              <div class="col-sm-4 col-sm-offset-2 col-xs-offset-0 col-xs-6">
+                  <img class="img-resources img-circle" src="/img/resources4-coordination.jpg" alt="{{site.data[locale].additional.apetraining}}">
+                  <div class="caption">
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].additional.apetraining}}
+                    <br><small>{{site.data[locale].additional.desc-apetraining}}</small>
+                    </a></p>
+                  </div>
+              </div>
+
+              <div class="col-sm-4 col-xs-6">
+                  <img class="img-resources img-circle" src="/img/resources5-videos.jpg" alt="{{site.data[locale].additional.jds}}">
+                  <div class="caption">
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-coordination page-scroll" role="button">{{site.data[locale].additional.others}}
+                    <br><small>{{site.data[locale].additional.desc-others}}</small>
+                    </a></p>
+                  </div>
+              </div>
+
             </div>
-            <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-                <img class="img-resources img-circle" src="/img/datamgmt3-im.jpg" alt="{{site.data[locale].datamanagement.imresources}}">
-                <div class="caption">
-                  <p><a href="#" class="btn btn-lg btn-default btn-resources btn-imresources page-scroll" role="button">{{site.data[locale].datamanagement.imresources}}
-                  <!-- <br><small>{{site.data[locale].datamanagement.calendar}}</small> -->
-                  </a></p>
-                </div>
-            </div>
-          </div>
 
         <p>
           <div id="search-box">
-          <input class="typeahead" type="text" placeholder="{{site.data[locale].datamanagement.searchmessage}}">
+          <input class="typeahead" type="text" placeholder="{{site.data[locale].additional.searchmessage}}">
           </div>
-          <div><small>({{site.data[locale].datamanagement.suggestlimit}})</small></div>
+          <div><small>({{site.data[locale].additional.suggestlimit}})</small></div>
         </p>
         </div>
 
@@ -408,7 +429,7 @@ function identity(ugly) {
 // GLOBAL VARIABLES
 // ################
 var language = "{{locale}}"
-var emptymessage = "{{site.data[locale].datamanagement.emptymessage}}"
+var emptymessage = "{{site.data[locale].additional.emptymessage}}"
 var resourcesdata;
 
 function fetchResources(){

@@ -17,10 +17,6 @@ nav_home:
   text:           "Home"
   url:            "/"
 nav:
-#  - text:         "Toolkit"
-#    url:          "/toolkit/"
-#  - text:         "Resources"
-#    url:          "/resources/"
   - text:         "Essentials"
     url:          "/en/essentials/"
   - text:         "Additional"
@@ -73,64 +69,47 @@ acknowledgment:
   text1:          "The Cash in Emergencies Toolkit was made possible thanks to the support of:"
   text2:          "The translations of the Cash in Emergencies Toolkit were funded by European Union Humanitarian Aid and the Swiss Red Cross."
 
-#############
-## TOOLKIT ##
-#############
-
-toolkit:
-  about:          "About"
-  title:          "Explore the Toolkit"
-  paragraph1:     "The Cash in Emergencies Toolkit is organized in modules, each corresponding to a different phase of the project cycle."
-  paragraph2:     "Each module is divided in steps and sub-steps. They are indicative and not necessarily sequential. The user may need to move back and forth to reach the intended results. The user may also need to skip some of the steps or sub-steps proposed, due to time and resource constraints that are common in an emergency context."
-  loaderror:      "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
-  zip:            "Explore the toolkit documents below or download the entire"
-  toolkit:        "toolkit"
-  modules:        "You will find 5 modules in the toolkit:"
-  module1:        "Preparedness"
-  module2:        "Assessment"
-  module3:        "Response<br> Analysis"
-  module4:        "Set-up &amp;<br>Implementation"
-  module5:        "Monitoring<br>&amp; Evaluation"
-  modalities:     "Other Tools / Modalities:"
-  cashforwork:    "Cash for Work"
-  vouchers:       "Vouchers"
-  searchmessage:  "Search for a document..."
-  emptymessage:   "unable to find a matching document"
-  suggestlimit:   "maximum of 20 suggestions returned when searching"
 
 ###############
-## Resources ##
+## Essentials ##
 ###############
 
-resources:
-  about:          "Resources"
+essentials:
+  about:          "Essentials"
   title:          "Red Cross Red Crescent Movement Resources"
   loaderror:      "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
-  guidance:       "Guidance"
-  keydocs:        "Key documents and additional CTP guidance"
-  learning:       "Learning"
-  casestudies:    "Case studies and fact sheets"
-  training:       "Training"
-  calendar:       "Calendar and material"
-  coordination:   "Coordination"
-  peerworking:    "Cash Peer Working Group"
-  videos:         "Videos"
-  youtube:        "IFRC YouTube page"
+  guidelines:     "Guidelines"
+  desc-guidelines:        "Description of guidelines"
+  apetemplates:       "APE Templates"
+  desc-apetemplates:    "Description of APE Templates"
+  enateamdeploy:       "ENA Team deployment"
+  desc-enateamdeploy:       "Description of ENA Team deployment"
+  apetraining:   "APE Training & Workshop content"
+  desc-apetraining:    "Description of APE ..."
+  jds:         "JDs"
+  desc-jds:        "Description of JDs"
   searchmessage:  "Search for a document..."
   emptymessage:   "unable to find a matching document"
   suggestlimit:   "maximum of 20 suggestions returned when searching"
 
 #####################
-## Data Management ##
+## Additional ##
 #####################
 
-datamanagement:
-  about:          "Data Managment"
-  title:          "Data Management Resources"
+additional:
+  about:          "Additional"
+  title:          "Additional Resources"
   loaderror:      "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
-  mdc:            "Mobile Data Collection"
-  spreadhsheet:   "Spreadsheet Tools"
-  imresources:    "Cash IM Resources"
+  guidelines:     "Guidelines"
+  desc-guidelines:        "Description of guidelines"
+  apetemplates:       "APE Templates"
+  desc-apetemplates:    "Description of APE Templates"
+  enateamdeploy:       "ENA Team deployment"
+  desc-enateamdeploy:       "Description of ENA Team deployment"
+  apetraining:   "APE Training & Workshop content"
+  desc-apetraining:    "Description of APE ..."
+  others:         "Others"
+  desc-others:        "Description of Others"
   searchmessage:  "Search for a document..."
   emptymessage:   "unable to find a matching document"
   suggestlimit:   "maximum of 20 suggestions returned when searching"
