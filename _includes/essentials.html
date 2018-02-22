@@ -339,7 +339,7 @@
       </div>
 
       <div id="resources-contents">
-        <div data-resourcespath="3. resources" class="resources-block">
+        <div data-resourcespath="1. essentials" class="resources-block">
             <div class="contents"></div>
             <!-- . . . folders and file links go here . . . -->
         </div>
@@ -432,7 +432,7 @@ var resourcesdata, modalitiesdata;
 function fetchResources(){
   $.ajax({
     type: 'GET',
-    url: 'http://webviz.redcross.org/ctp/resources/' + language,
+    url: 'http://34.216.207.161/ena/essentials',
     dataType: 'JSON',
     error: function(){
       $("#error-resources").show();
@@ -457,6 +457,7 @@ function buildResources() {
   var folderPaths = [];
   var pathPartsArray = [];
   $.each(resourcesdata, function(index, d){
+    d.dboxpathparts=d.dboxpathparts.slice(1)
     // this is necessary to get those folders if there is a folder without a file inside (just other folders)
     for(i=2;i<=d.dboxpathparts.length;i++){
       if($.inArray(d.dboxpathparts.slice(0,i).join('/'), folderPaths) === -1) {
@@ -511,13 +512,15 @@ function buildResources() {
     for(var i=0; i<resourcesdata.length; i++){
       if(systemFile(resourcesdata[i].basename) === false){
         if(resourcesdata[i].dboxpathparts.length === 1){
+          console.log("oops")
+          /*
           var thisHtml = '<div id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
             '<a target="_blank" href="http://webviz.redcross.org/ctp/docs/' + language + '/resources/' + resourcesdata[i].basename + '">' +
             resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
-          $('.overview-docs').append(thisHtml);
+          $('.overview-docs').append(thisHtml);*/
         } else {
           var thisHtml = '<div class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
-            '<a target="_blank" href="http://webviz.redcross.org/ctp/docs/' + language + '/' +
+            '<a target="_blank" href="http://34.216.207.161/ena/docs/' +  '/' +
             resourcesdata[i].dboxpathparts.join('/') + '/' + resourcesdata[i].basename + '">' +
             resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
             // console.log(identity(resourcesdata[i].dboxpathparts.join('/')))
