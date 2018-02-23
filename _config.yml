@@ -1,6 +1,6 @@
 # Site settings
-title: Cash in Emergencies
+title: Emergency Needs Assessment
 
 # locale settings
 default_locale:     "en"
-authorized_locales: ["en","es","fr", "ar", "ru"]
+authorized_locales: ["en","es"]
