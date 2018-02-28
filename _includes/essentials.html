@@ -282,6 +282,13 @@ padding-left: 30px;
       <div class="text-center">
           <h2>{{site.data[locale].essentials.title}}</h2>
 
+          <div id="grouped-essentials">
+            <p>{{site.data[locale].essentials.paragraph1}}</p>
+            <p>{{site.data[locale].essentials.paragraph2}}</p>
+            <p class="essentials-zip"></p>
+
+          </div>   <!--  / #grouped-tookit   -->
+
           <div id="error-resources" style="display:none;"><p>{{site.data[locale].essentials.loaderror}}</p></div>
           <div id="grouped-resources">
           <div class="row">
@@ -529,6 +536,14 @@ function buildResources() {
             '<a target="_blank" href="http://webviz.redcross.org/ctp/docs/' + language + '/resources/' + resourcesdata[i].basename + '">' +
             resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
           $('.overview-docs').append(thisHtml);*/
+          //if(resourcesdata[i].ext === ".zip"){
+            //var thisHtml = "{{site.data[locale].essentials.zip}}" + ' ' +
+              //'<a target="_blank" href="http://34.216.207.161/ena/docs/' + language + '/' + resourcesdata[i].basename + '">' +
+              //"{{site.data[locale].essentials.zip}}" + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
+              var thisHtml = '<a target="_blank" href="http://34.216.207.161/ena/docs/' + language + '/1. essentials/' + resourcesdata[i].basename + '">' +
+                "{{site.data[locale].essentials.zip}}" + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
+            $('.essentials-zip').html(thisHtml);
+          //}
         } else {
           var thisHtml = '<li class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
             //For the version  2.0

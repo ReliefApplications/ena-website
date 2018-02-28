@@ -3,11 +3,10 @@
 ##################
 
 meta:
-  description:    "Cash transfer based programming (CTP) is an effective and flexible way to support people affected by emergencies, maintaining their dignity and choice, while fostering local economies. CTP includes all forms of cash and voucher-based assistance. The Cash in Emergencies Toolkit has been devised as a means to make tools, practical guidance and minimum standards easily accessible to staff and volunteers."
+  description:    "The International Red Cross and Red Crescent Movement already has assessment guidelines and has invested in training throughout its network. However, real-time evaluations and operational reviews have indicated that the practice of needs assessments remains a challenge. This website and toolkit is to be used by all stakeholders in the Red Cross Red Crescent movement responsible for planning and implementing needs assessment after a disaster."
   ogimg:          "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/og-img-en.jpg"
   twitterimg:     "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/twitter-img-en.jpg"
-
-iewarning:        "Your browser is out of date and not supported by this website. Please check out <a href=\"http://browsehappy.com/\">Browse Happy</a> to get the latest versions of major browsers."
+  iewarning:       "Your browser is out of date and not supported by this website. Please check out <a href=\"http://browsehappy.com/\">Browse Happy</a> to get the latest versions of major browsers."
 
 ####################
 ## HEADER CONTENT ##
@@ -37,11 +36,11 @@ landing:
 ###########
 
 about:
-  title:          "About the Emergency Needs Assessment"
-  paragraph1:     "Cash transfer based programming (CTP) is an effective and flexible way to support people affected by emergencies, maintaining their dignity and choice, while fostering local economies. CTP includes all forms of cash and voucher-based assistance."
-  paragraph2:     "The Cash in Emergencies Toolkit has been devised by the International Red Cross and Red Crescent Movement as a means to make tools, practical guidance and minimum standards easily accessible to staff and volunteers. The toolkit should inform and guide the implementation of CTP, to improve the quality of CTP at the different phases of the project cycle."
-  toolkit:        "Explore the toolkit"
-  toolkiturl:     "/toolkit/"
+  title:      "About the Emergency Needs Assessment"
+  paragraph1: "Needs assessment is how organizations identify and measure the humanitarian needs of a disaster-affected community. Simply put, needs assessment is the best way to answer the question: ‘What assistance do disaster-affected communities need?’"
+  paragraph2: "Needs assessments use various methods to collect and analyse information. These enable the organization to make good decisions about how to allocate resources and gather more resources to meet the needs of the disaster-affected community."
+  toolkit:    "Explore the toolkit"
+  toolkiturl: "/en/essentials/"
 
 #####################
 ## FEEDBACK ##
@@ -50,14 +49,14 @@ about:
 feedback:
   id:             "feedback"
   title:          "Feedback"
-  paragraph1:     "The Cash in Emergencies Toolkit has been based on tools, guidance and experience both from within the International Red Cross and Red Crescent Movement and from other humanitarian organisations."
-  paragraph2:     "Suggestions for improvement of tools are welcome and shall inform the periodic update of the Toolkit. For technical issues with the website please send an <a href=\"mailto:daniel.joseph@redcross.org\">email</a>."
+  paragraph1:     "The Emergency Needs Assessment Toolkit has been based on tools, guidance and experience both from within the International Red Cross and Red Crescent Movement and from other humanitarian organisations."
+  paragraph2:     "Suggestions for improvement of tools are welcome and shall inform the periodic update of the Toolkit. For technical issues with the website please send an <a href=\"mailto:gfarturo@gmail.com\">email</a>."
   form_btn:       "Feedback Form"
-  social:         "Share This"
-  twitter:        "On Twitter"
-  tweet:          "Cash in Emergencies Toolkit: http://rcmcash.org/ via @Federation"
-  fb:             "On Facebook"
-  fblink:         "http://rcmcash.org/"
+  social:         ""
+  twitter:        ""
+  tweet:          ""
+  fb:             ""
+  fblink:         ""
 
 
 #####################
@@ -66,8 +65,8 @@ feedback:
 
 acknowledgment:
   title:          "Acknowledgment"
-  text1:          "The Cash in Emergencies Toolkit was made possible thanks to the support of:"
-  text2:          "The translations of the Cash in Emergencies Toolkit were funded by European Union Humanitarian Aid and the Swiss Red Cross."
+  text1:          "The Emergency Needs Assessment Toolkit was made possible thanks to the support of:"
+  text2:          "IFRC"
 
 
 ###############
@@ -79,18 +78,22 @@ essentials:
   title:          "Red Cross Red Crescent Movement Resources"
   loaderror:      "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
   guidelines:     "Guidelines"
-  desc-guidelines:        "Description of guidelines"
-  apetemplates:       "APE Templates"
-  desc-apetemplates:    "Description of APE Templates"
-  enateamdeploy:       "ENA Team deployment"
-  desc-enateamdeploy:       "Description of ENA Team deployment"
+  desc-guidelines: "Description of guidelines"
+  apetemplates:    "APE Templates"
+  desc-apetemplates: "Description of APE Templates"
+  enateamdeploy:     "ENA Team deployment"
+  desc-enateamdeploy: "Description of ENA Team deployment"
   apetraining:   "APE Training & Workshop content"
-  desc-apetraining:    "Description of APE ..."
+  desc-apetraining: "Description of APE ..."
   jds:         "JDs"
-  desc-jds:        "Description of JDs"
+  desc-jds:    "Description of JDs"
   searchmessage:  "Search for a document..."
   emptymessage:   "unable to find a matching document"
   suggestlimit:   "maximum of 20 suggestions returned when searching"
+  paragraph1:     "The ENA Toolkit is organized in two main modules, devided based on the importance of the documents."
+  paragraph2:     "Each module is divided in steps and sub-steps. They are indicative and not sequential. The user may need to move back and forth to reach the intended results."
+  zip:            "Explore the toolkit documents below or download the entire"
+
 
 #####################
 ## Additional ##
@@ -101,15 +104,18 @@ additional:
   title:          "Additional Resources"
   loaderror:      "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
   guidelines:     "Guidelines"
-  desc-guidelines:        "Description of guidelines"
-  apetemplates:       "APE Templates"
-  desc-apetemplates:    "Description of APE Templates"
-  enateamdeploy:       "ENA Team deployment"
-  desc-enateamdeploy:       "Description of ENA Team deployment"
+  desc-guidelines: "Description of guidelines"
+  apetemplates:    "APE Templates"
+  desc-apetemplates: "Description of APE Templates"
+  enateamdeploy:     "ENA Team deployment"
+  desc-enateamdeploy: "Description of ENA Team deployment"
   apetraining:   "APE Training & Workshop content"
-  desc-apetraining:    "Description of APE ..."
+  desc-apetraining:  "Description of APE ..."
   others:         "Others"
-  desc-others:        "Description of Others"
+  desc-others:    "Description of Others"
   searchmessage:  "Search for a document..."
   emptymessage:   "unable to find a matching document"
   suggestlimit:   "maximum of 20 suggestions returned when searching"
+  paragraph1:     "The ENA Toolkit is organized in two main modules, devided based on the importance of the documents."
+  paragraph2:     "Each module is divided in steps and sub-steps. They are indicative and not sequential. The user may need to move back and forth to reach the intended results."
+  zip:            "Explore the toolkit documents below or download the entire"

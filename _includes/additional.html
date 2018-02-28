@@ -292,6 +292,11 @@ padding-left: 30px;
       <div class="text-center">
           <h2>{{site.data[locale].additional.title}}</h2>
 
+          <div id="grouped-essentials">
+            <p>{{site.data[locale].additional.paragraph1}}</p>
+            <p>{{site.data[locale].additional.paragraph2}}</p>
+            <p class="additional-zip"></p>
+
           <div id="error-resources" style="display:none;"><p>{{site.data[locale].additional.loaderror}}</p></div>
           <div id="grouped-resources">
             <div class="row">
@@ -545,6 +550,9 @@ function buildResources() {
       if(systemFile(resourcesdata[i].basename) === false){
         if(resourcesdata[i].dboxpathparts.length === 1){
           console.log("oops")
+          var thisHtml = '<a target="_blank" href="http://34.216.207.161/ena/docs/' + language + '/2. additional/' + resourcesdata[i].basename + '">' +
+            "{{site.data[locale].additional.zip}}" + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
+            $('.additional-zip').html(thisHtml);
         } else {
           var thisHtml = '<li class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
             //For the version 2.0

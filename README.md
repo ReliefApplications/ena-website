@@ -1,28 +1,26 @@
-# the ENA website code is fully based on the CTP website: [https://github.com/AmericanRedCross/ctp-website/blob/gh-pages/_includes/toolkit.html#L426](https://github.com/AmericanRedCross/ctp-website/blob/gh-pages/_includes/toolkit.html#L426) 
+# the ENA website code is fully based on the CTP website: [https://github.com/AmericanRedCross/ctp-website/blob/gh-pages/_includes/toolkit.html#L426](https://github.com/AmericanRedCross/ctp-website/blob/gh-pages/_includes/toolkit.html#L426)
 
-# ctp-website
+# ena-website
 
 The Dropbox folder hierarchy needs to be as follows:
 
-- RCM CiE Toolkit Final
+- Emergency Needs Assessment Toolkit Final
   - en / es / etc. (ISO 639-1 two-letter language code)
-    - 1. toolkit *(folder name must match this exactly)*
+    - 1. Essential *(folder name must match this exactly)*
       - *(overview toolkit docs go here outside of any subfolders)*
       - *(a zip of the entire toolkit should be saved here outside of any subfolders)*
       - folders for sections and documents can be named anything but should sort into the order you want them to display
-    - 2. modalities *(folder name must match this exactly)*
-      - 1. Cash for Work Box *(the words should be translated but the number 1 must be included)*
-      - 2. Modalities Box *(the words should be translated but the number 2 must be included)*
-    - 3. resources *(folder name must match this exactly)*
-      - 1. Guidance *(the words should be translated but the number 1 must be included)*
-      - 2. Learning *(the words should be translated but the number 2 must be included)*  
-      - 3. Training *(the words should be translated but the number 3 must be included)*
-      - 4. Coordination *(the words should be translated but the number 4 must be included)*
-    - 4. data management *(folder name must match this exactly)*
-      - 1. Mobile Data Collection *(the words should be translated but the number 1 must be included)*
-      - 2. Spreadsheet Tools *(the words should be translated but the number 2 must be included)*  
-      - 3. Cash IM Resourcs *(the words should be translated but the number 3 must be included)*
-
+      - 1 - Guidelines
+      - 2 - APE templates
+      - 3 ENA Team Deployments
+      - 4 - APE Training & Workshop Content
+      - 5 - Job Descriptions
+    - 2. Additional *(folder name must match this exactly)*
+      - 1 - Guidelines *(the words should be translated but the number 1 must be included)*
+      - 2 - APE Templates *(the words should be translated but the number 2 must be included)*
+      - 3 - ENA team Deployments
+      - 4 - APE Training & Workshop Content
+      - 5 - Others
 
 ### Adding Language support
 The site is configured to support 2-letter core language codes. So english is 'en' not 'en-US' and/or 'en-GB'. Using a longer code will not function.
