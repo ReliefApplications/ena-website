@@ -447,9 +447,9 @@ function fetchResources(){
   $.ajax({
     type: 'GET',
     //For the 2.0 version
-    //url: 'http://34.216.207.161/ena/additional/'+language,
+    url: 'http://34.216.207.161/ena/additional/'+language,
     //For the 1.0 version
-    url: 'http://34.216.207.161/ena/additional/',
+    //url: 'http://34.216.207.161/ena/additional/',
 
 
     // url: 'http://webviz.redcross.org/ctp/datamanagement/' + language,
@@ -481,7 +481,7 @@ function buildResources() {
 
   $.each(resourcesdata, function(index, d){
     //For the version 1.0
-    d.dboxpathparts=d.dboxpathparts.slice(1)
+    //d.dboxpathparts=d.dboxpathparts.slice(1)
     // this is necessary to get those folders if there is a folder without a file inside (just other folders)
     for(i=2;i<=d.dboxpathparts.length;i++){
       if($.inArray(d.dboxpathparts.slice(0,i).join('/'), folderPaths) === -1) {
@@ -548,9 +548,9 @@ function buildResources() {
         } else {
           var thisHtml = '<li class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
             //For the version 2.0
-            //'<a target="_blank" href="http://34.216.207.161/ena/docs/' +language+ '/' +
+            '<a target="_blank" href="http://34.216.207.161/ena/docs/' +language+ '/' +
             //For the version 1.0
-            '<a target="_blank" href="http://34.216.207.161/ena/docs/'+ '/' +
+            //'<a target="_blank" href="http://34.216.207.161/ena/docs/'+ '/' +
             resourcesdata[i].dboxpathparts.join('/') + '/' + resourcesdata[i].basename + '">' +
             resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></li>';
             // console.log(identity(resourcesdata[i].dboxpathparts.join('/')))
