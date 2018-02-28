@@ -8,7 +8,9 @@
 
 .nav-item {
 padding-left: 20px;
-
+}
+.indent-title {
+padding-left: 30px;
 }
 
 #resources {
@@ -160,7 +162,7 @@ padding-left: 20px;
   margin: 12px 0 6px 0;
   font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
   font-size: 12px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 1px;
 }
 
@@ -444,7 +446,12 @@ var resourcesdata;
 function fetchResources(){
   $.ajax({
     type: 'GET',
-    url: 'http://34.216.207.161/ena/additional',
+    //For the 2.0 version
+    //url: 'http://34.216.207.161/ena/additional/'+language,
+    //For the 1.0 version
+    url: 'http://34.216.207.161/ena/additional/',
+
+
     // url: 'http://webviz.redcross.org/ctp/datamanagement/' + language,
     dataType: 'JSON',
     error: function(){
@@ -473,6 +480,7 @@ function buildResources() {
    pathPartsArray = [];
 
   $.each(resourcesdata, function(index, d){
+    //For the version 1.0
     d.dboxpathparts=d.dboxpathparts.slice(1)
     // this is necessary to get those folders if there is a folder without a file inside (just other folders)
     for(i=2;i<=d.dboxpathparts.length;i++){
@@ -501,7 +509,7 @@ function buildResources() {
       console.log('navHTML', navHtml);
       $('#resources-sidebar [data-resourcespath="' + d.slice(0,-1).join('/') + '"]').append(navHtml);
       // find parent folder list element and add a sub folder div element to it
-      var contentsHtml = '<div id="' + identity(d.slice(1).join('/')) + '" class="resources-block" data-resourcespath="' + d.join('/') + '">' +
+      var contentsHtml = '<div id="' + identity(d.slice(1).join('/')) + '" class="resources-block indent-title" data-resourcespath="' + d.join('/') + '">' +
         '<div class="folder-name level-' + i + '">' +
         ' &nbsp;' + d.slice(-1) + '</div><div class="contents"></div></div>';
 //
@@ -538,10 +546,13 @@ function buildResources() {
         if(resourcesdata[i].dboxpathparts.length === 1){
           console.log("oops")
         } else {
-          var thisHtml = '<div class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
-            '<a target="_blank" href="http://34.216.207.161/ena/docs/' + '/' +
+          var thisHtml = '<li class="resources-item" id="' + identity(resourcesdata[i].dboxpathparts.slice(1).join('/') + resourcesdata[i].basename) + '">' +
+            //For the version 2.0
+            //'<a target="_blank" href="http://34.216.207.161/ena/docs/' +language+ '/' +
+            //For the version 1.0
+            '<a target="_blank" href="http://34.216.207.161/ena/docs/'+ '/' +
             resourcesdata[i].dboxpathparts.join('/') + '/' + resourcesdata[i].basename + '">' +
-            resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></div>';
+            resourcesdata[i].basename.slice(0,resourcesdata[i].basename.indexOf(resourcesdata[i].ext)) + ' ' + typeIcon(resourcesdata[i].ext) + '</a></li>';
             // console.log(identity(resourcesdata[i].dboxpathparts.join('/')))
           $('[data-resourcespath="' + resourcesdata[i].dboxpathparts.join('/') + '"]').children('.contents').prepend(thisHtml);
         }
