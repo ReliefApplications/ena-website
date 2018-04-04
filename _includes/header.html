@@ -5,14 +5,14 @@
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
           <i class="fa fa-bars"></i>
       </button>
-      <a class="navbar-brand" href="{{site.data[page.lang].nav_home.url}}">{{site.data[page.lang].nav_home.text}}</a>
+      <a class="navbar-brand" href="{{site.baseurl}}{{site.data[page.lang].nav_home.url}}">{{site.data[page.lang].nav_home.text}}</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
 				{% for nav in site.data[page.lang].nav %}
 				{% if nav.url %}
 				<li>
-					<a href="{{nav.url}}">{{nav.text}}</a>
+					<a href="{{site.baseurl}}{{nav.url}}">{{nav.text}}</a>
 				</li>
 				{% else if nav.links %}
 				<li class="dropdown">
@@ -20,7 +20,7 @@
             {{nav.text}} <span class="caret"></span></a>
 					<ul class="dropdown-menu">
 						{% for link in nav.links %}
-						<li><a href="{{link.url}}">{{link.text}}</a></li>
+						<li><a href="{{site.baseurl}}{{link.url}}">{{link.text}}</a></li>
 						{% endfor %}
 					</ul>
 				</li>
