@@ -3,9 +3,9 @@
 ##################
 
 meta:
-  description:    "La Programación de Transferencia en Efectivo (PTE) es una manera efectiva y flexible para apoyar a gente afectada por desastres, manteniendo su dignidad y poder de decisión  y a la vez fomentando la economía local. PTE incluye todo tipo de asistencia basada en la transferencia de dinero o vales. La Caja de Herramientas para PTE en Emergencias ha sido diseñada como un medio por el cual herramientas, guías prácticas y estándares mínimos pueden ser accedidos fácilmente por personal y voluntarios."
-  ogimg:          "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/og-img-es.jpg"
-  twitterimg:     "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/twitter-img-es.jpg"
+  description:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta elementum magna eget suscipit. Ut metus elit, commodo sed sapien non, condimentum fringilla lacus. In at tellus ut est commodo sollicitudin. Aliquam in feugiat lorem. Pellentesque urna turpis, laoreet nec porttitor in, tincidunt sit amet ex. Aliquam nibh ipsum, vestibulum accumsan urna quis, dictum aliquam diam."
+  ogimg:          ""
+  twitterimg:     ""
 
 iewarning:        "Su navegador no está actualizado y no es compatible con este sitio web. Por favor, haga clic aquí <a href=\"http://browsehappy.com/\">Exploración feliz</a> para obtener las versiones más actualizadas de los principales navegadores de Internet."
 
@@ -38,10 +38,10 @@ landing:
 
 about:
   title:          "Sobre la Caja de Herramientas para PTE en Emergencias"
-  paragraph1:     "La Programación de Transferencia en Efectivo (PTE) es una manera efectiva y flexible para apoyar a gente afectada por desastres, manteniendo su dignidad y poder de decisión  y a la vez fomentando la economía local. PTE incluye todo tipo de asistencia basada en la transferencia de dinero o vales."
-  paragraph2:     "La caja de herramientas para PTE en Emergencias ha sido diseñada por el Movimiento Internacional de la Cruz Roja y de la Media Luna Roja  como un medio por el cual herramientas, guías prácticas y estándares mínimos pueden ser accedidos fácilmente por personal y voluntarios.  La caja de herramientas debe informar y guiar la implementación de PTE, para poder mejorar la calidad de PTE durante las distintas fases del ciclo de proyecto."
+  paragraph1:     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta elementum magna eget suscipit. Ut metus elit, commodo sed sapien non, condimentum fringilla lacus. In at tellus ut est commodo sollicitudin. Aliquam in feugiat lorem. Pellentesque urna turpis, laoreet nec porttitor in, tincidunt sit amet ex."
+  paragraph2:     "Aliquam nibh ipsum, vestibulum accumsan urna quis, dictum aliquam diam. Proin a neque bibendum, molestie justo at, ultrices urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget eros arcu. Fusce viverra, lorem ut tincidunt suscipit, enim mi tempor urna, in feugiat nisl lacus nec orci."
   toolkit:        "Explore la Caja De Herramientas"
-  toolkiturl:     "/es/caja-de-herramientas/"
+  toolkiturl:     "/es/toolkit/"
 
 #####################
 ## FEEDBACK ##
@@ -50,7 +50,7 @@ about:
 feedback:
   id:             "comentarios"
   title:          "Comentarios y Sugerencias"
-  paragraph1:     "La caja de herramientas para PTE en emergencias se ha basado en herramientas, orientación y experiencia, tanto del Movimiento Internacional de la Cruz Roja y Media Luna Roja como de otras organizaciones humanitarias."
+  paragraph1:     "La caja de herramientas se ha basado en herramientas, orientación y experiencia, tanto del Movimiento Internacional de la Cruz Roja y Media Luna Roja como de otras organizaciones humanitarias."
   paragraph2:     "Comentarios y Sugerencias para la mejora de la herramienta son bienvenidos e informarán la actualización periódica de la caja de herramientas. Si tiene problemas técnicos con la página web por favor envíe un <a href=\"mailto:daniel.joseph@redcross.org\">correo electrónico</a>."
   form_btn:       "Formulario <br> Comentarios y Sugerencias"
   social:         "Comparte a través de:"
@@ -65,7 +65,7 @@ feedback:
 
 acknowledgment:
   title:          "Reconocimientos"
-  text1:          "La caja de herramientas para PTE en emergencias fue posible gracias al apoyo de:"
+  text1:          "The Toolkit was made possible thanks to the support of many people."
   text2:          "La traducción de la caja de herramientas para PTE en Emergencias fue financiada por la Unión Europea Ayuda Humanitaria."
 
 
@@ -74,22 +74,22 @@ acknowledgment:
 ###############
 
 essentials:
-  about:          "Recursos"
-  title:          "Recursos del Movimiento International de la Cruz Roja y de la Media Luna Roja"
-  loaderror:      "Lo sentimos, algo salió mal al cargar el recurso. Por favor, actualice la página. Si el problema persiste, envíe un correo electrónico a <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> con la siguiente información:  Nombre del navegador de Internet que está utilizando (nombre y versión del navegador) y la dirección URL. Gracias."
-  guidelines:       "Guías"
-  desc-guidelines:        "Documentos Claves y Guías adicionales para PTE"
-  apetemplates:       "Aprendizaje"
-  desc-apetemplates:    "Estudios de Caso e Informes"
-  enateamdeploy:       "Capacitación"
-  desc-enateamdeploy:       "Calendario y Material"
-  apetraining:   "Coordinación"
-  desc-apetraining:    "Grupo de Trabajo PTE"
-  jds:         "Videos"
-  desc-jds:        "FICR Página YouTube"
-  searchmessage:  "Busque un documento..."
-  emptymessage:   "no se encontró documento coincidente"
-  suggestlimit:   "búsqueda regresa un máximo de 20 sugerencias"
+  about:              "Essentials"
+  title:              "Red Cross Red Crescent Movement Resources"
+  loaderror:          "Sorry, something went wrong loading the resource. Please refresh the page. If the problem persists, send an email to <a href=\"mailto:daniel.joseph@redcross.org\">daniel.joseph@redcross.org</a> with the internet browser (name and version) you are using and the URL. Thank you."
+  guidelines:         "Guidelines"
+  desc-guidelines:    "Description of guidelines"
+  apetemplates:       "APE Templates"
+  desc-apetemplates:  "Description of APE Templates"
+  enateamdeploy:      "ENA Team deployment"
+  desc-enateamdeploy: "Description of ENA Team deployment"
+  apetraining:        "APE Training & Workshop content"
+  desc-apetraining:   "Description of APE ..."
+  jds:                "JDs"
+  desc-jds:           "Description of JDs"
+  searchmessage:      "Search for a document..."
+  emptymessage:       "unable to find a matching document"
+  suggestlimit:       "maximum of 20 suggestions returned when searching"
 
 #####################
 ## Additional ##

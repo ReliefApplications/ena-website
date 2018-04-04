@@ -1,8 +1,9 @@
+baseurl: "/ena-website" # for deployment to gh-pages
+# baseurl: "" # for testing locally
+
 # Site settings
 title: Emergency Needs Assessment
 
 # locale settings
 default_locale:     "en"
 authorized_locales: ["en","es"]
-
-exclude: [vendor]

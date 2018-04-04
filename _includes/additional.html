@@ -18,7 +18,7 @@ padding-left: 30px;
   background-color: #f5f5f5;
   padding: 80px 20px;
   position: relative;
-  {% if locale != "ar" %}
+  {% if page.lang != "ar" %}
   margin-left: 240px;
   {% endif %}
   z-index: 2;
@@ -264,13 +264,13 @@ padding-left: 30px;
 
 <div class="page-wrapper">
   <!--Nav Bar -->
-  {% if locale != "ar" %}
+  {% if page.lang != "ar" %}
   <nav id="resources-sidebar" class="">
 
     <div class="nav-wrapper">
 
       <ul class="nav nav-stacked nav-custom" style="padding-top:20px;" data-resourcespath="2. additional" >
-        <li><a href="#resources" class="page-scroll">{{site.data[locale].additional.about}}</a></li>
+        <li><a href="#resources" class="page-scroll">{{site.data[page.lang].additional.about}}</a></li>
           <!-- . . . resources nav menu goes here . . . -->
       </ul>
     </div>
@@ -279,43 +279,43 @@ padding-left: 30px;
 
     <!-- Resources content -->
     <div id="resources" class="">
-      {% if locale != "ar" %}
-      <div class="menu-btn"><i class="fa fa-bars"></i></div>
+      {% if page.lang != "ar" %}
+      <div class="menu-btn"><i class="fas fa-bar"></i></div>
       {% endif %}
 
       <!--[if lte IE 9]>
         <section id="browser-warning">
-          {{site.data[locale].iewarning}}
+          {{site.data[page.lang].iewarning}}
         </section>
       <![endif]-->
 
       <div class="text-center">
-          <h2>{{site.data[locale].additional.title}}</h2>
+          <h2>{{site.data[page.lang].additional.title}}</h2>
 
-          <div id="error-resources" style="display:none;"><p>{{site.data[locale].additional.loaderror}}</p></div>
+          <div id="error-resources" style="display:none;"><p>{{site.data[page.lang].additional.loaderror}}</p></div>
           <div id="grouped-resources">
             <div class="row">
               <div class="col-sm-4 col-xs-6">
-                  <img class="img-resources img-circle" src="/img/resources1-guidance.jpg" alt="{{site.data[locale].additional.guidelines}}">
+                  <img class="img-resources img-circle" src="{{ site.baseurl }}/img/resources1-guidance.jpg" alt="{{site.data[page.lang].additional.guidelines}}">
                   <div class="caption">
-                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidelines page-scroll" role="button">{{site.data[locale].additional.guidelines}}
-                    <br><small>{{site.data[locale].additional.desc-guidelines}}</small>
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-guidelines page-scroll" role="button">{{site.data[page.lang].additional.guidelines}}
+                    <br><small>{{site.data[page.lang].additional.desc-guidelines}}</small>
                     </a></p>
                   </div>
               </div>
               <div class="col-sm-4 col-xs-6">
-                  <img class="img-resources img-circle" src="/img/resources2-learning.jpg" alt="{{site.data[locale].additional.apetemplates}}">
+                  <img class="img-resources img-circle" src="{{ site.baseurl }}/img/resources2-learning.jpg" alt="{{site.data[page.lang].additional.apetemplates}}">
                   <div class="caption">
-                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetemplate page-scroll" role="button">{{site.data[locale].additional.apetemplates}}
-                    <br><small>{{site.data[locale].additional.desc-apetemplates}}</small>
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetemplate page-scroll" role="button">{{site.data[page.lang].additional.apetemplates}}
+                    <br><small>{{site.data[page.lang].additional.desc-apetemplates}}</small>
                     </a></p>
                   </div>
               </div>
               <div class="col-sm-4 col-xs-6 col-xs-offset-3 col-sm-offset-0">
-                  <img class="img-resources img-circle" src="/img/resources3-training.jpg" alt="{{site.data[locale].additional.enateamdeploy}}">
+                  <img class="img-resources img-circle" src="{{ site.baseurl }}/img/resources3-training.jpg" alt="{{site.data[page.lang].additional.enateamdeploy}}">
                   <div class="caption">
-                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-enateamdeploy page-scroll" role="button">{{site.data[locale].additional.enateamdeploy}}
-                    <br><small>{{site.data[locale].additional.enateamdeploy}}</small>
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-enateamdeploy page-scroll" role="button">{{site.data[page.lang].additional.enateamdeploy}}
+                    <br><small>{{site.data[page.lang].additional.enateamdeploy}}</small>
                     </a></p>
                   </div>
               </div>
@@ -323,19 +323,19 @@ padding-left: 30px;
 
             <div class="row">
               <div class="col-sm-4 col-sm-offset-2 col-xs-offset-0 col-xs-6">
-                  <img class="img-resources img-circle" src="/img/resources4-coordination.jpg" alt="{{site.data[locale].additional.apetraining}}">
+                  <img class="img-resources img-circle" src="{{ site.baseurl }}/img/resources4-coordination.jpg" alt="{{site.data[page.lang].additional.apetraining}}">
                   <div class="caption">
-                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetraining page-scroll" role="button">{{site.data[locale].additional.apetraining}}
-                    <br><small>{{site.data[locale].additional.desc-apetraining}}</small>
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-apetraining page-scroll" role="button">{{site.data[page.lang].additional.apetraining}}
+                    <br><small>{{site.data[page.lang].additional.desc-apetraining}}</small>
                     </a></p>
                   </div>
               </div>
 
               <div class="col-sm-4 col-xs-6">
-                  <img class="img-resources img-circle" src="/img/resources5-videos.jpg" alt="{{site.data[locale].additional.jds}}">
+                  <img class="img-resources img-circle" src="{{ site.baseurl }}/img/resources5-videos.jpg" alt="{{site.data[page.lang].additional.jds}}">
                   <div class="caption">
-                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-others page-scroll" role="button">{{site.data[locale].additional.others}}
-                    <br><small>{{site.data[locale].additional.desc-others}}</small>
+                    <p><a href="#" class="btn btn-lg btn-default btn-resources btn-others page-scroll" role="button">{{site.data[page.lang].additional.others}}
+                    <br><small>{{site.data[page.lang].additional.desc-others}}</small>
                     </a></p>
                   </div>
               </div>
@@ -344,9 +344,9 @@ padding-left: 30px;
 
         <p>
           <div id="search-box">
-          <input class="typeahead" type="text" placeholder="{{site.data[locale].additional.searchmessage}}">
+          <input class="typeahead" type="text" placeholder="{{site.data[page.lang].additional.searchmessage}}">
           </div>
-          <div><small>({{site.data[locale].additional.suggestlimit}})</small></div>
+          <div><small>({{site.data[page.lang].additional.suggestlimit}})</small></div>
         </p>
         </div>
 
@@ -363,8 +363,8 @@ padding-left: 30px;
     <div style="width:100%; height: 500px; background-color:#f5f5f5;"></div>
 
 </div>
-<script src="/js/typeahead.bundle.js" charset="utf-8"></script>
-<script src="/js/handlebars-v4.0.5.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/typeahead.bundle.js" charset="utf-8"></script>
+<script src="{{ site.baseurl }}/js/handlebars-v4.0.5.js" charset="utf-8"></script>
 <script src="//d3js.org/d3.v3.min.js" charset="utf-8"></script>
 <script>
 
@@ -401,30 +401,30 @@ var typeIcon = function(extension){
   switch(extension) {
     case ".doc":
     case ".docx":
-      return '<i class="fa fa-fw fa-file-word-o"></i> '
+      return '<i class="far fa-file-word"></i> '
       break;
     case ".jpeg":
     case ".jpg":
     case ".png":
-      return '<i class="fa fa-fw fa-file-image-o"></i> '
+      return '<i class="far fa-file-image"></i> '
       break;
     case ".pdf":
-      return '<i class="fa fa-fw fa-file-pdf-o"></i> '
+      return '<i class="far fa-file-pdf"></i> '
       break;
     case ".ppt":
     case ".pptx":
-      return '<i class="fa fa-fw fa-file-powerpoint-o"></i> '
+      return '<i class="far fa-file-powerpoint"></i> '
       break;
     case ".xls":
     case ".xlsm":
     case ".xlsx":
-      return '<i class="fa fa-fw fa-file-excel-o"></i> '
+      return '<i class="far fa-file-excel"></i> '
       break;
     case ".zip":
-      return '<i class="fa fa-fw fa-file-archive-o"></i> '
+      return '<i class="far fa-file-archive"></i> '
       break;
     default:
-      return '<i class="fa fa-fw fa-file-o"></i> '
+      return '<i class="far fa-file"></i> '
   }
 };
 
@@ -439,8 +439,8 @@ function identity(ugly) {
 
 // GLOBAL VARIABLES
 // ################
-var language = "{{locale}}"
-var emptymessage = "{{site.data[locale].additional.emptymessage}}"
+var language = "{{page.lang}}"
+var emptymessage = "{{site.data[page.lang].additional.emptymessage}}"
 var resourcesdata;
 
 function fetchResources(){
