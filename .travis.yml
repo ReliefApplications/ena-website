@@ -9,7 +9,7 @@ rvm:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: 3eddaea73a55a3986e948eeed1cda3b9b6624981 # Set in travis-ci.org dashboard, marked secure
+  github-token: c9da4ffb46e2211a90020c03fe6fdfac93475423 # Set in travis-ci.org dashboard, marked secure
   keep-history: true
   on:
     branch: gh-pages
