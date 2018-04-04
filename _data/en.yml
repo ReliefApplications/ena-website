@@ -3,9 +3,9 @@
 ##################
 
 meta:
-  description:    "Cash transfer based programming (CTP) is an effective and flexible way to support people affected by emergencies, maintaining their dignity and choice, while fostering local economies. CTP includes all forms of cash and voucher-based assistance. The Cash in Emergencies Toolkit has been devised as a means to make tools, practical guidance and minimum standards easily accessible to staff and volunteers."
-  ogimg:          "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/og-img-en.jpg"
-  twitterimg:     "https://raw.githubusercontent.com/AmericanRedCross/ctp-website/gh-pages/img/twitter-img-en.jpg"
+  description:    "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta elementum magna eget suscipit. Ut metus elit, commodo sed sapien non, condimentum fringilla lacus. In at tellus ut est commodo sollicitudin. Aliquam in feugiat lorem. Pellentesque urna turpis, laoreet nec porttitor in, tincidunt sit amet ex. Aliquam nibh ipsum, vestibulum accumsan urna quis, dictum aliquam diam."
+  ogimg:          ""
+  twitterimg:     ""
 
 iewarning:        "Your browser is out of date and not supported by this website. Please check out <a href=\"http://browsehappy.com/\">Browse Happy</a> to get the latest versions of major browsers."
 
@@ -38,8 +38,8 @@ landing:
 
 about:
   title:          "About the Emergency Needs Assessment"
-  paragraph1:     "Cash transfer based programming (CTP) is an effective and flexible way to support people affected by emergencies, maintaining their dignity and choice, while fostering local economies. CTP includes all forms of cash and voucher-based assistance."
-  paragraph2:     "The Cash in Emergencies Toolkit has been devised by the International Red Cross and Red Crescent Movement as a means to make tools, practical guidance and minimum standards easily accessible to staff and volunteers. The toolkit should inform and guide the implementation of CTP, to improve the quality of CTP at the different phases of the project cycle."
+  paragraph1:     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque porta elementum magna eget suscipit. Ut metus elit, commodo sed sapien non, condimentum fringilla lacus. In at tellus ut est commodo sollicitudin. Aliquam in feugiat lorem. Pellentesque urna turpis, laoreet nec porttitor in, tincidunt sit amet ex."
+  paragraph2:     "Aliquam nibh ipsum, vestibulum accumsan urna quis, dictum aliquam diam. Proin a neque bibendum, molestie justo at, ultrices urna. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec eget eros arcu. Fusce viverra, lorem ut tincidunt suscipit, enim mi tempor urna, in feugiat nisl lacus nec orci."
   toolkit:        "Explore the toolkit"
   toolkiturl:     "/toolkit/"
 
@@ -50,7 +50,7 @@ about:
 feedback:
   id:             "feedback"
   title:          "Feedback"
-  paragraph1:     "The Cash in Emergencies Toolkit has been based on tools, guidance and experience both from within the International Red Cross and Red Crescent Movement and from other humanitarian organisations."
+  paragraph1:     "The Toolkit has been based on tools, guidance and experience both from within the International Red Cross and Red Crescent Movement and from other humanitarian organisations."
   paragraph2:     "Suggestions for improvement of tools are welcome and shall inform the periodic update of the Toolkit. For technical issues with the website please send an <a href=\"mailto:daniel.joseph@redcross.org\">email</a>."
   form_btn:       "Feedback Form"
   social:         "Share This"
@@ -66,7 +66,7 @@ feedback:
 
 acknowledgment:
   title:          "Acknowledgment"
-  text1:          "The Cash in Emergencies Toolkit was made possible thanks to the support of:"
+  text1:          "The Toolkit was made possible thanks to the support of many people."
   text2:          "The translations of the Cash in Emergencies Toolkit were funded by European Union Humanitarian Aid and the Swiss Red Cross."
 
 
