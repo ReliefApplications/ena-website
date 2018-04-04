@@ -4,7 +4,13 @@ rvm:
  - jruby
  - rbx-3
 
- 
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: 3eddaea73a55a3986e948eeed1cda3b9b6624981 # Set in travis-ci.org dashboard, marked secure
+  keep-history: true
+  on:
+    branch: master
 
 before_script:
  - chmod +x ./script/cibuild # or do this locally and commit
