@@ -4,3 +4,5 @@ title: Emergency Needs Assessment
 # locale settings
 default_locale:     "en"
 authorized_locales: ["en","es"]
+
+exclude: [vendor]
